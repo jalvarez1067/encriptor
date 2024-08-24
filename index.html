@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/Estilos.css">
 
     <!-- Tags JS -->
-    <script type="text/javascript" src="js/funciones.js"></script>
     <title>Encriptor de datos</title>
 </head>
 <body>
@@ -16,7 +15,7 @@
     <main class="contenido">
         <div class="contenido-text">
             <img src="img/logo.png" alt = "logo" class="contenido-text-logo">
-            <input type="textarea" value="" placeholder="Ingrese el texto aqui" class="contenido-text-input">
+            <textarea name="texto" id="texto" cols="1050" rows="25" placeholder="Ingrese el texto aquí" class="contenido-text-input"></textarea>
             <div class="contenido-mensaje">
                 <div class="contenido-mensaje-icono">
                     <img src="img/exclamacion.png" alt="signo de exclamacion">
@@ -24,21 +23,24 @@
                 <div class="contenido-mensaje-texto">Solo letras minúsculas y sin acentos</div>
             </div>
             <div class="contenido-botones">
-                <button class="contenido-botones-encriptar">Encriptar</button>
-                <button class="contenido-botones-desencriptar">Desencriptar</button>
+                <button class="contenido-botones-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="contenido-botones-desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
         
-        <div>
+        <div class="p-40">
             <div class="contenido-encriptado">
-                <div><img src="img/Muñeco.png" alt="muñeco" class="contenido-encriptado-imagen"></div>
-                <div class="contenido-encriptado-texto">
-                    <div class="contenido-encriptado-texto-titulo">Ningún mensaje fue encontrado</div>
-                    <div class="contenido-encriptado-texto-parrafo">Ingrese el texto que desea encriptar o desencriptar</div>
+                <div class="resultado">
+                    <div><img src="img/Muñeco.png" alt="muñeco" class="contenido-encriptado-imagen"></div>
+                    <div class="contenido-encriptado-texto">
+                        <div class="contenido-encriptado-texto-titulo">Ningún mensaje fue encontrado</div>
+                        <div class="contenido-encriptado-texto-parrafo">Ingrese el texto que desea encriptar o desencriptar</div>
+                    </div>
                 </div>
+                <div id="boton"></div>
             </div>
         </div>
     </main>
-    
+    <script type="text/javascript" src="funciones.js"></script>
 </body>
 </html>
