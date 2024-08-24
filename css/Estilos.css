@@ -4,6 +4,7 @@
     --color-1: #F3F5FC;
     --color-2: #ffffff;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -33,14 +34,13 @@ body{
 }
 
 .contenido-text-input{
-    position: relative;
-    top: 80px;
-    left: 240px;
+    margin-top: 80px;
+    margin-left: 240px;
     width: 577px;
     height: 48px;
     font-family: 'inter', sans-serif;
     font-weight: 400;
-    color: var(--color-3) !important;
+    color: #0A3871;
     background-color: transparent;
     font-size: 32px;
     border: 0;
@@ -48,11 +48,76 @@ body{
 }
 
 .contenido-text-input::placeholder{
-    color: var(--color-3);
+    color: #0A3871;
     font-family: 'inter', sans-serif;
-    font-weight: normal;
+    font-weight: regular-400;
     font-size: 32px;
 
+}
+
+.contenido-mensaje{
+    display: flex;
+    gap: 8px;
+    margin-top: 580px;
+    margin-left: 240px;
+    width: 229px;
+    height: 18px;
+}
+
+.contenido-mensaje-icono{
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
+    margin-top: 1px;
+}
+
+.contenido-mensaje-texto{
+    width: 205px;
+    height: 18px;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 10px !important;
+    color: #495057;
+    opacity: 80%;
+}
+
+.contenido-botones{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    margin-left: 240px;
+    width: 680px;
+    height: 67px;
+}
+
+.contenido-botones-encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+}
+
+.contenido-botones-desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    padding: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: center;
 }
 
 .contenido-encriptado{
@@ -70,7 +135,7 @@ body{
 }
 
 .contenido-encriptado-imagen{
-    margin-top: 243px;
+    margin-top: 0px;
     width: 336px;
     height: 304px;
 }
